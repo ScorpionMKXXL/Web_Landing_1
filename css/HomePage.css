@@ -1,0 +1,49 @@
+.HomePage{
+    margin: 90px 40px 0 40px;
+}
+.HomePage_Head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.HomePage_Author {
+    width: 100px;
+    margin: 10px 0;
+    font-size: 2.64em;
+}
+.HomePage_Prof {
+    margin-top: 30px;
+    width: 170px;
+    font-family: 'Gilroy-Medium';
+}
+.HomePag_Photo {
+    display: block;
+    min-height: 87px;
+    width: 100%;
+    margin: 0 auto;
+    content: url('/img/BSPP2266.jpg');
+}
+.lang {
+    transform: rotate(-90deg);
+    margin-top: 40px;
+}
+.lang > span {
+    color: #828282;
+}
+
+/* адаптив */
+
+@media screen and (max-width: 560px){
+.HomePage_Head {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.HomePag_Photo {
+    content: url('/img/BSPP2267.jpg');
+}
+.HomePage{
+    margin-top: 20px;
+}
+.lang { display: none; }
+.HomePage_Prof { margin: 0 0 20px 0; }
+}

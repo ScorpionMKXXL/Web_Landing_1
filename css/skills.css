@@ -1,0 +1,82 @@
+.skills > .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0;
+}
+.skills_P {
+    font-family: 'Gilroy-Medium';
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards_img {
+    height: 90px;
+    width: 90px;
+    display: flex;
+}
+.cards_icon{
+    position: absolute;
+}
+.cards_subtitle {
+    color: #828282;
+    width: 88px;
+    text-align: center;
+    font-size: 0.78em;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+.cards_stars {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    justify-content: space-between;
+}
+.APS, .AI, .AAE, .Figma {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 210px;
+    width: 170px;
+    margin: 30px 30px;
+}
+.cards_FigmaElems {
+    width: 60px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Figma_Elems {
+    font-size: none;
+    height: 30px;
+    width: 30px;
+}
+.Figma_Elems:nth-child(1){
+    background-color: #F24E1E;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.Figma_Elems:nth-child(2){
+    background-color: #FF7262;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.Figma_Elems:nth-child(3){
+    background-color: #A259FF;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.Figma_Elems:nth-child(4){
+    background-color: #1ABCFE;
+    border-radius: 50%;
+}
+.Figma_Elems:nth-child(5){
+    background-color: #0ACF83;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+}

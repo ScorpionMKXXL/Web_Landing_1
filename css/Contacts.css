@@ -1,0 +1,48 @@
+.contacts > .content {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts_subtitle {
+    width: 275px;
+    text-align: center;
+    font-family: 'Gilroy-Medium';
+    margin: 0 0 40px 0;
+}
+.SendMessage {
+    width: 180px;
+    height: 42px;
+    color: #fff;
+    font-family: 'Gilroy-Bold';
+    background-color: #070707;
+    border: 0;
+    outline: 0;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.social {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+}
+.SocialLink {
+    text-decoration: none;
+}
+.Footer_Subtitle {
+    font-family: 'Gilroy-Medium';
+    color: #828282;
+    margin: 45px 0;
+    font-size: 0.78em;
+    text-align: center;
+}
+
+@media screen and (max-width: 375px) {
+    .SendMessage {
+        width: 90%;
+    }
+    .social {
+        width: 90%;
+    }
+}

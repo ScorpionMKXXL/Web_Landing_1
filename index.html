@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/defStyle.css">
+    <link rel="stylesheet" href="css/HEADER.css">
+    <link rel="stylesheet" href="css/HomePage.css">
+    <link rel="stylesheet" href="css/AboutMe.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/Portfolio.css">
+    <link rel="stylesheet" href="css/Contacts.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="burgerWrapper" v-bind:class="{checked: OpenBurger}" @click="OpenBurgerToggle()">
+                <div class="burger"></div>
+            </div>
+            <div class="content">
+                <a class="header_Link" @click="CloseBurger()" href="#HOME" v-bind:class="{ header_Link_A : StyleType.HEAD }">home</a>
+                <a class="header_Link" @click="CloseBurger()" href="#ABOUTME" v-bind:class="{ header_Link_A : StyleType.ABOUTME }">about me</a>
+                <a class="header_Link" @click="CloseBurger()" href="#SKILLS" v-bind:class="{ header_Link_A : StyleType.SKILLS }">skills</a>
+                <a class="header_Link" @click="CloseBurger()" href="#PORTFOLIO" v-bind:class="{ header_Link_A : StyleType.PORTFOLIO }">portfolio</a>
+                <a class="header_Link" @click="CloseBurger()" href="#CONTACTS" v-bind:class="{ header_Link_A : StyleType.CONTACTS }">contacts</a>
+            </div>
+        </header>
+        <div class="HomePage"><section id="HOME" style="position: relative; top: -170px;"></section>
+            <div class="content">
+                <div class="HomePage_Head">
+                    <h1 class="HomePage_Author">Denis Novik</h1>
+                    <div class="HomePage_Prof">UX | UI designer <br> 24 years old, Minsk</div>
+                    <div class="lang"><span>RU</span> | ENG</div>
+                </div>
+                <div class="HomePag_Photo"></div>
+            </div>
+        </div>
+        <div class="aboutMe"><section id="ABOUTME" style="position: relative; top: -170px;"></section>
+            <div class="content">
+                <h2 class="aboutMe_Head">About me</h2>
+                <p class="aboutMe_P">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+                <p class="aboutMe_P">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                <p class="aboutMe_P">Ready to implement excellent projects with wonderful people.</p>
+            </div>
+        </div>
+        <div class="skills"><section id="SKILLS" style="position: absolute; top: -90px;"></section>
+            <div class="content">
+                <h2>Skills</h2>
+                <p class="skills_P">I work in such programs as</p>
+                <div class="cards">
+                    <div class="APS">
+                        <div class="cards_img">
+                            <img src="/img/Cards/PhotoShop.png" alt="Error" class="cards_icon">
+                            <img src="/img/Cards/PhotoShop_Background.png" alt="Error" class="cards_icon_back">
+                        </div>
+                        <h3 class="cards_subtitle">Adobe Photoshop</h3>
+                        <div class="cards_stars">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="img/Cards/STAR_UnChecked.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="AI">
+                        <div class="cards_img">
+                            <img src="/img/Cards/AdobeAllustator.png" alt="Error" class="cards_icon">
+                            <img src="/img/Cards/AdobeAllustator_Background.png" alt="Error" class="cards_icon_back">
+                        </div>
+                        <h3 class="cards_subtitle">Adobe Illustrator</h3>
+                        <div class="cards_stars">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_UnChecked.png" alt="#">
+                            <img src="img/Cards/STAR_UnChecked.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="AAE">
+                        <div class="cards_img">
+                            <img src="/img/Cards/AdobeAfterEffects.png" alt="Error" class="cards_icon">
+                            <img src="/img/Cards/AdobeAfterEffects_Background.png" alt="Error" class="cards_icon_back">
+                        </div>
+                        <h3 class="cards_subtitle">Adobe After Effects</h3>
+                        <div class="cards_stars">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="img/Cards/STAR_UnChecked.png" alt="#">
+                        </div>
+                    </div>
+                    <div class="Figma">
+                        <div class="cards_FigmaElems">
+                            <div class="Figma_Elems"></div>
+                            <div class="Figma_Elems"></div>
+                            <div class="Figma_Elems"></div>
+                            <div class="Figma_Elems"></div>
+                            <div class="Figma_Elems"></div>
+                        </div>
+                        <h3 class="cards_subtitle">Figma</h3>
+                        <div class="cards_stars">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="/img/Cards/STAR_Checked.png" alt="#">
+                            <img src="img/Cards/STAR_UnChecked.png" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio"><section id="PORTFOLIO" style="position: absolute; top: -90px;"></section>
+            <div class="content">
+                <h2>Portfolio</h2>
+                <div class="portfolio_item">
+                    <img src="img/Portfolio/Portfolio_1.webp" alt="Not loaded" class="portfolio_Image">
+                    <div class="portfolio_Subtitle">Online fashion store - Homepage</div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="img/Portfolio/Portfolio_2.webp" alt="Not loaded" class="portfolio_Image">
+                    <div class="portfolio_Subtitle">Reebok Store - Concept</div>
+                </div>
+                <div class="portfolio_item">
+                    <img src="img/Portfolio/Portfolio_3.webp" alt="Not loaded" class="portfolio_Image">
+                    <div class="portfolio_Subtitle">Braun Landing Page - Concept</div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts"><section id="CONTACTS" style="position: absolute; top: -90px;"></section>
+            <div class="content">
+                <h2>Contacts</h2>
+                <p class="contacts_subtitle">Want to know more or just chat? You are welcome!</p>
+                <button class="SendMessage">Send message</button>
+                <div class="social">
+                    <a title="LinkedIn" href="#" class="SocialLink">
+                        <img src="./img/Social/LinkedIn_Social.jpg" alt="">
+                    </a>
+                    <a title="Instagram" href="#" class="SocialLink">
+                        <img src="./img/Social/Instagram_Social.jpg" alt="">
+                    </a>
+                    <a title="Behance" href="#" class="SocialLink">
+                        <img src="./img/Social/Behance_Social.jpg" alt="">
+                    </a>
+                    <a title="Dribble" href="#" class="SocialLink">
+                        <img src="./img/Social/Dribble_Social.jpg" alt="">
+                    </a>
+                </div>
+                <p class="Footer_Subtitle">Like me on <br> LinkedIn, Instagram, Behance, Dribble</p>
+            </div>
+        </div>
+    </div>
+    <script src="/js/Header.js"></script>
+</body>
+</html>
